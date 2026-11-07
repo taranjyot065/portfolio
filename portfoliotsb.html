@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Taranjyot Singh Bagga | Cyber Security Analyst</title>
+<style>
+:root{--bg:#070b16;--fg:#e8eefc;--mut:#8b97b5;--card:rgba(255,255,255,.06);--bd:rgba(255,255,255,.12);--a:#00e5ff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f2f5fc;--fg:#0e1530;--mut:#55608a;--card:rgba(14,21,48,.05);--bd:rgba(14,21,48,.14)}}
+:root[data-theme="light"]{--bg:#f2f5fc;--fg:#0e1530;--mut:#55608a;--card:rgba(14,21,48,.05);--bd:rgba(14,21,48,.14)}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;overflow:hidden}
+body{background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;transition:background .6s}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:0}
+.glow{position:fixed;width:60vmax;height:60vmax;border-radius:50%;background:radial-gradient(circle,var(--a),transparent 65%);opacity:.18;top:-20vmax;right:-15vmax;transition:background 1s;z-index:0;animation:drift 14s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate(-8vmax,10vmax) scale(1.15)}}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:calc(14px + env(safe-area-inset-top,0px)) 24px 14px}
+.logo{font-weight:800;letter-spacing:.5px}.logo b{color:var(--a);transition:color .8s}
+#th{background:var(--card);border:1px solid var(--bd);color:var(--fg);border-radius:20px;padding:6px 14px;cursor:pointer;font-size:14px}
+.dots{position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:20;display:flex;flex-direction:column;gap:12px}
+.dots button{width:11px;height:11px;border-radius:50%;border:2px solid var(--mut);background:none;cursor:pointer;padding:0;transition:.4s}
+.dots button.on{background:var(--a);border-color:var(--a);transform:scale(1.5);box-shadow:0 0 12px var(--a)}
+.arrows{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);z-index:20;display:flex;gap:14px;align-items:center}
+.arrows button{width:46px;height:46px;border-radius:50%;border:1px solid var(--bd);background:var(--card);color:var(--fg);font-size:20px;cursor:pointer;backdrop-filter:blur(8px);transition:.3s}
+.arrows button:hover{background:var(--a);color:#000;transform:scale(1.1)}
+#cnt{color:var(--mut);font-variant-numeric:tabular-nums;min-width:50px;text-align:center}
+.wipe{position:fixed;inset:0;background:var(--a);z-index:15;transform:translateX(-101%);pointer-events:none}
+.wipe.go{animation:wipe .9s cubic-bezier(.7,0,.2,1)}
+@keyframes wipe{0%{transform:translateX(-101%)}45%{transform:translateX(0)}55%{transform:translateX(0)}100%{transform:translateX(101%)}}
+.wipe.back.go{animation-name:wipeb}
+@keyframes wipeb{0%{transform:translateX(101%)}45%{transform:translateX(0)}55%{transform:translateX(0)}100%{transform:translateX(-101%)}}
+.s{position:fixed;inset:0;z-index:5;display:flex;align-items:center;justify-content:center;padding:84px 7vw 90px;opacity:0;visibility:hidden;transform:translateX(10%) scale(.96);transition:opacity .6s .15s,transform .8s .15s cubic-bezier(.2,.8,.2,1),visibility 0s .9s;overflow-y:auto}
+.s.on{opacity:1;visibility:visible;transform:none;transition:opacity .6s .35s,transform .9s .35s cubic-bezier(.2,.8,.2,1),visibility 0s 0s}
+.s.pv{transform:translateX(-10%) scale(.96)}
+.in{width:100%;max-width:1080px;margin:auto}
+.rv{opacity:0;transform:translateY(30px);transition:.7s cubic-bezier(.2,.8,.2,1)}
+.on .rv{opacity:1;transform:none;transition-delay:calc(var(--i,0)*100ms + 550ms)}
+h1{font-size:clamp(2.2rem,6vw,4.4rem);line-height:1.05;font-weight:800}
+h2{font-size:clamp(1.8rem,4vw,3rem);margin-bottom:22px}
+h2 span,h1 span{color:var(--a);transition:color .8s}
+.tag{color:var(--a);letter-spacing:3px;text-transform:uppercase;font-size:.8rem;margin-bottom:12px;transition:color .8s}
+.sub{color:var(--mut);margin:14px 0 24px;max-width:520px}
+.row{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.btn{display:inline-block;padding:12px 24px;border-radius:30px;background:var(--a);color:#000;font-weight:700;text-decoration:none;margin:0 10px 10px 0;border:1px solid var(--a);cursor:pointer;transition:.3s}
+.btn.o{background:none;color:var(--fg);border-color:var(--bd)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 24px color-mix(in srgb,var(--a) 50%,transparent)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:20px;backdrop-filter:blur(10px);transition:.35s}
+.card:hover{transform:translateY(-6px) rotate(-.4deg);border-color:var(--a)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card h3{margin-bottom:6px}.card small{color:var(--a);transition:color .8s}
+.card p,.card li{color:var(--mut);font-size:.95rem}.card ul{padding-left:18px}
+.stat{font-size:2.4rem;font-weight:800;color:var(--a);transition:color .8s}
+.bar{margin-bottom:16px}.bar div:first-child{display:flex;justify-content:space-between;font-size:.9rem;margin-bottom:5px}
+.bar i{display:block;height:8px;border-radius:8px;background:var(--card);overflow:hidden}
+.bar i::after{content:"";display:block;height:100%;width:0;border-radius:8px;background:linear-gradient(90deg,var(--a),#fff8);transition:width 1.4s cubic-bezier(.2,.8,.2,1) 1s}
+.on .bar i::after{width:var(--w)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.chips span{padding:6px 13px;border:1px solid var(--bd);border-radius:20px;background:var(--card);font-size:.85rem;transition:.3s}
+.chips span:hover{background:var(--a);color:#000;transform:scale(1.08)}
+.tl{border-left:2px solid var(--a);padding-left:22px;display:grid;gap:18px;transition:border-color .8s}
+.tl .card{position:relative}
+.tl .card::before{content:"";position:absolute;left:-31px;top:24px;width:14px;height:14px;border-radius:50%;background:var(--a);box-shadow:0 0 0 5px color-mix(in srgb,var(--a) 25%,transparent);animation:pulse 2s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 10px transparent}}
+.term{background:#050810;border:1px solid var(--bd);border-radius:14px;padding:16px;font:13px/1.7 ui-monospace,Menlo,Consolas,monospace;color:#7dffb0;min-height:140px;margin-top:20px;max-width:460px}
+.term b{color:var(--a)}.cur{display:inline-block;width:8px;height:14px;background:#7dffb0;animation:bl 1s steps(2) infinite;vertical-align:middle}
+@keyframes bl{50%{opacity:0}}
+.ill{width:100%;max-width:420px;margin:auto;display:block}
+.fl{animation:fl 5s ease-in-out infinite alternate}.fl2{animation:fl 7s ease-in-out infinite alternate-reverse}
+@keyframes fl{to{transform:translateY(-14px)}}
+.spin{transform-origin:200px 200px;animation:sp 18s linear infinite}.spin2{transform-origin:200px 200px;animation:sp 26s linear infinite reverse}
+@keyframes sp{to{transform:rotate(360deg)}}
+.ill .a{stroke:var(--a);transition:stroke .8s}.ill .af{fill:var(--a);transition:fill .8s}
+a.lk{color:var(--a);text-decoration:none}
+@media (max-width:760px){.row{grid-template-columns:1fr}.ill{max-width:240px}.dots{right:8px}.s{padding:76px 22px 96px;align-items:flex-start}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01s!important}}
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas><div class="glow"></div><div class="wipe" id="wp"></div>
+<nav><div class="logo">TSB<b>.</b>sec</div><button id="th">Theme</button></nav>
+<div class="dots" id="dots"></div>
+<div class="arrows"><button id="pv" aria-label="Previous">&#8592;</button><span id="cnt">1 / 6</span><button id="nx" aria-label="Next">&#8594;</button></div>
+
+<section class="s on" data-a="#00e5ff"><div class="in row">
+<div><p class="tag rv" style="--i:0">Cyber Security Analyst</p>
+<h1 class="rv" style="--i:1">Hi, I'm <span>Taranjyot Singh Bagga</span></h1>
+<p class="sub rv" style="--i:2">Cloud &amp; penetration testing enthusiast breaking things ethically, then securing them. B.Tech CSE at VIT Bhopal.</p>
+<div class="rv" style="--i:3"><a class="btn" href="mailto:dontmess065@gmail.com">Hire me</a><a class="btn o" href="https://linkedin.com/in/taranjyotsinghbagga" target="_blank" rel="noopener">LinkedIn</a><a class="btn o" href="https://github.com/taranjyot065" target="_blank" rel="noopener">GitHub</a></div>
+<div class="term rv" style="--i:4"><b>root@kali:~$</b> <span id="ty"></span><span class="cur"></span></div></div>
+<svg class="ill rv" style="--i:2" viewBox="0 0 400 400" fill="none"><g class="spin"><circle class="a" cx="200" cy="200" r="170" stroke-width="2" stroke-dasharray="6 12"/><circle class="af" cx="200" cy="30" r="8"/></g><g class="spin2"><circle class="a" cx="200" cy="200" r="130" stroke-width="2" stroke-dasharray="2 10"/><circle class="af" cx="330" cy="200" r="6"/></g><g class="fl"><path class="a" d="M200 90l80 30v70c0 55-35 90-80 110-45-20-80-55-80-110v-70z" stroke-width="5" fill="rgba(0,229,255,.08)"/><rect class="a" x="170" y="190" width="60" height="50" rx="8" stroke-width="5"/><path class="a" d="M180 190v-18a20 20 0 0140 0v18" stroke-width="5"/><circle class="af" cx="200" cy="215" r="7"/></g><g class="fl2"><rect class="a" x="40" y="300" width="70" height="46" rx="8" stroke-width="3"/><path class="a" d="M52 316l10 8-10 8M72 332h20" stroke-width="3"/></g></svg>
+</div></section>
+
+<section class="s" data-a="#a78bfa"><div class="in row">
+<div><p class="tag rv" style="--i:0">About me</p><h2 class="rv" style="--i:1">Proactive, <span>hands-on</span>, always learning</h2>
+<p class="sub rv" style="--i:2" >Cyber Security Intern at Petronet LNG and Cloud Intern at Thoughtsol (Microsoft Azure). I work with Python/C++ automation, Linux, model training and pen testing, and I'm active in CTFs and TryHackMe.</p>
+<div class="chips rv" style="--i:3"><span>English</span><span>Hindi</span><span>CTF</span><span>Music Club core member</span><span>Football gold medalist</span></div></div>
+<div class="card rv" style="--i:2"><small>EDUCATION &middot; Sep 2023 &ndash; Jun 2027</small><h3>VIT Bhopal University</h3><p>B.Tech, Computer Science &amp; Engineering</p><div class="stat">8.2 <span style="font-size:1rem;color:var(--mut)">/ 10 CGPA</span></div><p>Cybersecurity Fundamentals, Computer Networks, Operating Systems, Kali Linux &amp; Pen Testing, AWS Cloud.</p></div>
+</div></section>
+
+<section class="s" data-a="#34d399"><div class="in row">
+<div><p class="tag rv" style="--i:0">Skills</p><h2 class="rv" style="--i:1">My <span>toolkit</span></h2>
+<div class="bar rv" style="--i:2;--w:90%"><div><b>Python</b><span>90%</span></div><i></i></div>
+<div class="bar rv" style="--i:3;--w:85%"><div><b>Penetration Testing</b><span>85%</span></div><i></i></div>
+<div class="bar rv" style="--i:4;--w:80%"><div><b>Linux / Kali</b><span>80%</span></div><i></i></div>
+<div class="bar rv" style="--i:5;--w:78%"><div><b>AWS Cloud</b><span>78%</span></div><i></i></div>
+<div class="bar rv" style="--i:6;--w:75%"><div><b>Microsoft Azure</b><span>75%</span></div><i></i></div>
+<div class="bar rv" style="--i:7;--w:75%"><div><b>C++ (DSA)</b><span>75%</span></div><i></i></div></div>
+<div><div class="card rv" style="--i:3"><h3>Security tools</h3><div class="chips"><span>Nmap</span><span>Wireshark</span><span>Metasploit</span><span>Scapy</span><span>Pycryptodome</span></div></div><br>
+<div class="card rv" style="--i:4"><h3>Cloud, databases &amp; other</h3><div class="chips"><span>AWS: EC2, EBS, EFS</span><span>Microsoft Azure</span><span>DevOps</span><span>SQL</span><span>MongoDB</span><span>HTML/CSS</span><span>Model Training</span></div></div></div>
+</div></section>
+
+<section class="s" data-a="#fb923c"><div class="in"><p class="tag rv" style="--i:0">Experience</p><h2 class="rv" style="--i:1">Where I've <span>worked</span></h2>
+<div class="tl">
+<div class="card rv" style="--i:2"><small>Petronet LNG &middot; BIS Department &middot; New Delhi &middot; Dec 2025 &ndash; Jan 2026</small><h3>Cyber Security Intern</h3><ul><li>SOC fundamentals: vulnerability scanning and log analysis with Nmap, Wireshark, Kali.</li><li>Submitted a project report, &ldquo;Comprehensive Study on Cybersecurity and Enterprise Tools: Palo Alto, AVEVA PI, SAP, ARIBA, and Power BI&rdquo;, guided by Mr. Arvindra Singh, Senior Manager (BIS).</li></ul></div>
+<div class="card rv" style="--i:3"><small>Thoughtsol &middot; Microsoft Azure Cloud Infrastructure</small><h3>Cloud Intern</h3><ul><li>Azure deployments: Virtual Machines, Managed Disks, Azure Files, App Service, Container Instances.</li><li>Automated cloud tasks with Python and Linux administration.</li></ul></div>
+<div class="card rv" style="--i:4"><small>TCS (Forage) &middot; Virtual</small><h3>Cybersecurity Analyst Job Simulation</h3><p>Identity &amp; access management and policy review with a consulting team.</p></div>
+</div></div></section>
+
+<section class="s" data-a="#f472b6"><div class="in"><p class="tag rv" style="--i:0">Projects</p><h2 class="rv" style="--i:1">Things I've <span>built</span></h2>
+<div class="grid">
+<div class="card rv" style="--i:2"><svg viewBox="0 0 120 50" width="120" fill="none"><ellipse class="a" cx="60" cy="25" rx="40" ry="20" stroke-width="3" style="stroke:var(--a)"/><circle cx="60" cy="25" r="10" style="fill:var(--a)"><animate attributeName="r" values="8;12;8" dur="2.5s" repeatCount="indefinite"/></circle></svg><h3>Eye Disease Detection</h3><p>Detection and classification pipeline in Python and OpenCV, tested on real-time video and tuned for lighting variance.</p><div class="chips"><span>Python</span><span>OpenCV</span><span>mediapipe/dlib</span></div><br><a class="lk" href="https://github.com/taranjyot065/eye-disease-detection-model" target="_blank" rel="noopener">View on GitHub &rarr;</a></div>
+<div class="card rv" style="--i:3"><svg viewBox="0 0 120 50" width="120" fill="none"><path d="M60 46V20M60 30c-14 0-18-10-18-18 12 0 18 6 18 18zM60 24c12 0 16-8 16-16-12 0-16 6-16 16z" stroke-width="3" stroke-linecap="round" style="stroke:var(--a)"><animateTransform attributeName="transform" type="rotate" values="-4 60 46;4 60 46;-4 60 46" dur="4s" repeatCount="indefinite"/></path></svg><h3>Crop Detection Model</h3><p>Classifier for aerial and field images; accuracy improved with data augmentation.</p><div class="chips"><span>Python</span><span>TensorFlow/Keras</span></div><br><a class="lk" href="https://github.com/taranjyot065/crop-detection-model" target="_blank" rel="noopener">View on GitHub &rarr;</a></div>
+<div class="card rv" style="--i:4"><svg viewBox="0 0 120 50" width="120" fill="none"><path d="M10 10h100v30H10zM20 22l8 6-8 6M36 34h18" stroke-width="3" style="stroke:var(--a)"/></svg><h3>CTF &amp; TryHackMe Labs</h3><p>Ongoing exploitation, privilege escalation and network analysis challenges.</p><div class="chips"><span>Exploitation</span><span>PrivEsc</span><span>Network analysis</span></div></div>
+</div></div></section>
+
+<section class="s" data-a="#facc15"><div class="in row">
+<div><p class="tag rv" style="--i:0">Certifications &amp; contact</p><h2 class="rv" style="--i:1">Let's <span>connect</span></h2>
+<div class="chips rv" style="--i:2"><span>Python &ndash; HackerRank</span><span>Linux Unhatched &ndash; Cisco</span><span>DSA in C++ &ndash; Udemy</span><span>Cybersecurity Essentials &ndash; Linux Foundation</span><span>TCS IAM &ndash; Forage</span><span>AWS Solution Architect (CSE3016)</span><span>DP-900 &ndash; Microsoft Azure</span></div>
+<p class="sub rv" style="--i:3">Looking for Cyber Security Analyst roles. Reach out any time.</p>
+<div class="rv" style="--i:4"><a class="btn" href="mailto:dontmess065@gmail.com">dontmess065@gmail.com</a><a class="btn o" href="tel:+918827381733">+91 88273 81733</a><a class="btn o" href="https://linkedin.com/in/taranjyotsinghbagga" target="_blank" rel="noopener">LinkedIn</a><a class="btn o" href="https://github.com/taranjyot065" target="_blank" rel="noopener">GitHub</a></div></div>
+<svg class="ill rv" style="--i:2" viewBox="0 0 400 400" fill="none"><g class="fl"><rect class="a" x="80" y="130" width="240" height="160" rx="16" stroke-width="5" fill="rgba(250,204,21,.07)"/><path class="a" d="M80 150l120 80 120-80" stroke-width="5"/></g><g class="spin"><circle class="af" cx="200" cy="40" r="10"/><circle class="a" cx="200" cy="200" r="160" stroke-width="2" stroke-dasharray="3 14"/></g><g class="fl2"><path class="a" d="M60 90l20-20 20 20M70 70h20" stroke-width="3"/></g></svg>
+</div></section>
+
+<script>
+(function(){
+var S=[].slice.call(document.querySelectorAll(".s")),n=0,busy=false,D=document.getElementById("dots"),C=document.getElementById("cnt"),W=document.getElementById("wp"),R=document.documentElement;
+S.forEach(function(_,i){var b=document.createElement("button");b.setAttribute("aria-label","Slide "+(i+1));b.onclick=function(){go(i)};D.appendChild(b)});
+function go(t){
+ if(busy||t===n||t<0||t>=S.length)return;busy=true;var back=t<n;
+ W.className="wipe"+(back?" back":"");void W.offsetWidth;W.classList.add("go");
+ R.style.setProperty("--a",S[t].dataset.a);
+ S[n].classList.remove("on");S[n].classList.toggle("pv",!back);
+ S.forEach(function(s,i){if(i!==n&&i!==t)s.classList.remove("pv")});
+ S[t].classList.toggle("pv",back);void S[t].offsetWidth;
+ setTimeout(function(){S[t].classList.remove("pv");S[t].classList.add("on")},300);
+ n=t;upd();setTimeout(function(){busy=false},1000)}
+function upd(){[].forEach.call(D.children,function(b,i){b.classList.toggle("on",i===n)});C.textContent=(n+1)+" / "+S.length}
+document.getElementById("nx").onclick=function(){go(n+1)};
+document.getElementById("pv").onclick=function(){go(n-1)};
+addEventListener("keydown",function(e){if(["ArrowRight","ArrowDown","PageDown"," "].indexOf(e.key)>-1){e.preventDefault();go(n+1)}if(["ArrowLeft","ArrowUp","PageUp"].indexOf(e.key)>-1){e.preventDefault();go(n-1)}});
+var wl=0;addEventListener("wheel",function(e){var s=S[n];if(Math.abs(e.deltaY)<30||Date.now()-wl<900)return;
+ var atB=s.scrollTop+s.clientHeight>=s.scrollHeight-4,atT=s.scrollTop<=0;
+ if(e.deltaY>0&&atB){wl=Date.now();go(n+1)}else if(e.deltaY<0&&atT){wl=Date.now();go(n-1)}},{passive:true});
+var tx=0,ty=0;addEventListener("touchstart",function(e){tx=e.touches[0].clientX;ty=e.touches[0].clientY},{passive:true});
+addEventListener("touchend",function(e){var dx=e.changedTouches[0].clientX-tx,dy=e.changedTouches[0].clientY-ty;if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy))go(dx<0?n+1:n-1)},{passive:true});
+document.getElementById("th").onclick=function(){var l=R.dataset.theme?R.dataset.theme==="light":matchMedia("(prefers-color-scheme:light)").matches;R.dataset.theme=l?"dark":"light"};
+R.style.setProperty("--a",S[0].dataset.a);upd();
+// typing
+var L=["whoami -> taranjyot","nmap -sV target.lab","az vm list -o table","aws ec2 describe-instances","echo 'securing the world'"],li=0,ci=0,del=false,T=document.getElementById("ty");
+(function tick(){var w=L[li];T.textContent=w.slice(0,ci);if(!del&&ci===w.length){del=true;return setTimeout(tick,1600)}
+ if(del&&ci===0){del=false;li=(li+1)%L.length}ci+=del?-1:1;setTimeout(tick,del?25:70)})();
+// particle network
+var cv=document.getElementById("bg"),x=cv.getContext("2d"),P=[],w,h;
+function rs(){w=cv.width=innerWidth;h=cv.height=innerHeight;P=[];for(var i=0;i<Math.min(70,w*h/16000|0);i++)P.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.5,vy:(Math.random()-.5)*.5})}
+rs();addEventListener("resize",rs);
+(function draw(){x.clearRect(0,0,w,h);var c=getComputedStyle(R).getPropertyValue("--a").trim()||"#00e5ff";x.fillStyle=c;x.strokeStyle=c;
+ P.forEach(function(p,i){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>w)p.vx*=-1;if(p.y<0||p.y>h)p.vy*=-1;x.globalAlpha=.6;x.beginPath();x.arc(p.x,p.y,1.8,0,7);x.fill();
+ for(var j=i+1;j<P.length;j++){var q=P[j],d=Math.hypot(p.x-q.x,p.y-q.y);if(d<130){x.globalAlpha=.18*(1-d/130);x.beginPath();x.moveTo(p.x,p.y);x.lineTo(q.x,q.y);x.stroke()}}});
+ requestAnimationFrame(draw)})();
+})();
+</script>
+</body>
+</html>
